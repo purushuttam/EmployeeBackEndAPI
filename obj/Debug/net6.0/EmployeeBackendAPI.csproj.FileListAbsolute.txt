@@ -1,0 +1,80 @@
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\EmployeeBackendAPI.exe
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\EmployeeBackendAPI.deps.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\EmployeeBackendAPI.runtimeconfig.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\EmployeeBackendAPI.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\EmployeeBackendAPI.pdb
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Npgsql.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.AssemblyInfo.cs
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets\msbuild.EmployeeBackendAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.EmployeeBackendAPI.props
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EmployeeBackendAPI.props
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EmployeeBackendAPI.props
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\scopedcss\bundle\EmployeeBackendAPI.styles.css
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.CopyComplete
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\refint\EmployeeBackendAPI.dll
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.pdb
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\EmployeeBackendAPI.genruntimeconfig.cache
+C:\Users\DELL\Desktop\EmployeeBackendAPI\EmployeeBackendAPI\obj\Debug\net6.0\ref\EmployeeBackendAPI.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.AssemblyReference.cache
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.AssemblyInfoInputs.cache
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.AssemblyInfo.cs
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.CoreCompileInputs.cache
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\refint\EmployeeBackendAPI.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.pdb
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\appsettings.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\EmployeeBackendAPI.exe
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\EmployeeBackendAPI.deps.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\EmployeeBackendAPI.runtimeconfig.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\EmployeeBackendAPI.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\EmployeeBackendAPI.pdb
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Npgsql.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets\msbuild.EmployeeBackendAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.EmployeeBackendAPI.props
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EmployeeBackendAPI.props
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.EmployeeBackendAPI.props
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\scopedcss\bundle\EmployeeBackendAPI.styles.css
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.csproj.CopyComplete
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\EmployeeBackendAPI.genruntimeconfig.cache
+D:\Purushuttam web\Anguler\EmployeeBackEndAPI\obj\Debug\net6.0\ref\EmployeeBackendAPI.dll
