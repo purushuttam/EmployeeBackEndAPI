@@ -5,8 +5,8 @@ namespace EmployeeBackendAPI.Interface
 {
     public interface ICurrency_master
     {
-        Task<Response> addCurrency(currency_master currency);
-        Task<Response> updateCurrency(currency_master currency);
-        Task<List<currency_master>> getCurrencyList();
+        Task<Response> AddCurrency(currency_master currency);
+        Task<Response> UpdateCurrency(currency_master currency);
+        Task<List<currency_master>> GetCurrencyList();
     }
 }

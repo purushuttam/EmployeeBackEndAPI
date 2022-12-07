@@ -14,7 +14,7 @@ namespace EmployeeBackendAPI.Repository
         {
             _context = context;
         }
-        public async Task<Response> addState(state_master model)
+        public async Task<Response> AddState(state_master model)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> removeState(int Id)
+        public async Task<Response> RemoveState(int Id)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> updateState(state_master model)
+        public async Task<Response> UpdateState(state_master model)
         {
             try
             {

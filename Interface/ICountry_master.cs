@@ -5,9 +5,9 @@ namespace EmployeeBackendAPI.Interface
 {
     public interface ICountry_master
     {
-        Task<Response> addCountry(country_master country);
-        Task<Response> updateCountry(country_master country);
-        Task<List<country_master>> getAllCountry();
-        Task<country_master> getCountry(int id);
+        Task<Response> AddCountry(country_master country);
+        Task<Response> UpdateCountry(country_master country);
+        Task<List<country_master>> GetAllCountry();
+        Task<country_master> GetCountry(int id);
     }
 }

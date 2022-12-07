@@ -17,7 +17,7 @@ namespace EmployeeBackendAPI.Repository
             _context = context;
         }
 
-        public async Task<Response> addCountry(country_master model)
+        public async Task<Response> AddCountry(country_master model)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace EmployeeBackendAPI.Repository
                     int i = await _context.SaveChangesAsync();
                     if (i > 0)
                     {
-                        var objCurrency = await saveCurrency(model.currency_Master, model.country_id);
+                        var objCurrency = await SaveCurrency(model.currency_Master, model.country_id);
                         if (objCurrency.resp)
                         {
                             response.resp = true;
@@ -69,7 +69,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        private async Task<Response> saveCurrency(currency_master model, int country_id)
+        private async Task<Response> SaveCurrency(currency_master model, int country_id)
         {
             try
             {
@@ -121,7 +121,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<country_master>> getAllCountry()
+        public async Task<List<country_master>> GetAllCountry()
         {
             try
             {
@@ -134,7 +134,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<country_master> getCountry(int id)
+        public async Task<country_master> GetCountry(int id)
         {
             try
             {
@@ -147,7 +147,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> updateCountry(country_master model)
+        public async Task<Response> UpdateCountry(country_master model)
         {
             try
             {
@@ -158,7 +158,7 @@ namespace EmployeeBackendAPI.Repository
                     int i = await _context.SaveChangesAsync();
                     if (i > 0)
                     {
-                        var objCurrency = await saveCurrency(model.currency_Master, model.country_id);
+                        var objCurrency = await SaveCurrency(model.currency_Master, model.country_id);
                         if (objCurrency.resp)
                         {
                             response.resp = true;

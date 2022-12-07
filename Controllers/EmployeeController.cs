@@ -17,9 +17,9 @@ namespace EmployeeBackendAPI.Controllers
         }
         [HttpPost]
         [Route("saveEmployee")]
-        public async Task<IActionResult> saveEmployee(Employee employee)
+        public async Task<IActionResult> SaveEmployee(Employee employee)
         {
-            var res = await _employee.saveEmployee(employee);
+            var res = await _employee.SaveEmployee(employee);
             return Ok(res);
         }
     }

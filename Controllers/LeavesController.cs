@@ -16,28 +16,28 @@ namespace EmployeeBackendAPI.Controllers
             _leaves = leaves;
         }
         [HttpPost]
-        [Route("addleaves")]
-        public async Task<IActionResult> addleaves(List<leaves> model)
+        [Route("Addleaves")]
+        public async Task<IActionResult> Addleaves(List<leaves> model)
         {
-            var res = await _leaves.addleaves(model);
+            var res = await _leaves.Addleaves(model);
             return Ok(res);
         }
 
 
         /*  [Authorize]*/
         [HttpGet]
-        [Route("getleaves")]
-        public async Task<IActionResult> getleaves()
+        [Route("Getleaves")]
+        public async Task<IActionResult> Getleaves()
         {
-            var res = await _leaves.getleaves();
+            var res = await _leaves.Getleaves();
             return Ok(res);
         }
 
         [HttpGet]
-        [Route("getleavesByEmployee/lid")]
-        public async Task<IActionResult> getleavesByEmployee(int lid)
+        [Route("GetleavesByEmployee/{lid}")]
+        public async Task<IActionResult> GetleavesByEmployee(int lid)
         {
-            var res = await _leaves.getleavesByEmployee(lid);
+            var res = await _leaves.GetleavesByEmployee(lid);
             return Ok(res);
         }
     }

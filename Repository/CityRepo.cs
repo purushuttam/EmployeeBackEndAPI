@@ -19,7 +19,7 @@ namespace EmployeeBackendAPI.Repository
             _context = context;
         }
 
-        public async Task<Response> addCity(city_master model)
+        public async Task<Response> AddCity(city_master model)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> updateCity(city_master model)
+        public async Task<Response> UpdateCity(city_master model)
         {
             try
             {
@@ -96,7 +96,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> deleteCity(int id)
+        public async Task<Response> DeleteCity(int id)
         {
             try
             {
@@ -134,7 +134,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<city_master>> getAllCity()
+        public async Task<List<city_master>> GetAllCity()
         {
             try
             {
@@ -147,7 +147,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<city_master> getCity(int id)
+        public async Task<city_master> GetCity(int id)
         {
             try
             {

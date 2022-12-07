@@ -14,7 +14,7 @@ namespace EmployeeBackendAPI.Repository
         {
             _context = context;
         }
-        public async Task<Response> addCurrency(currency_master model)
+        public async Task<Response> AddCurrency(currency_master model)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<currency_master>> getCurrencyList()
+        public async Task<List<currency_master>> GetCurrencyList()
         {
             try
             {
@@ -66,7 +66,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<Response> updateCurrency(currency_master model)
+        public async Task<Response> UpdateCurrency(currency_master model)
         {
             try
             {

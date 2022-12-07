@@ -15,7 +15,7 @@ namespace EmployeeBackendAPI.Repository
         {
             _context = context;
         }
-        public async Task<Response> saveEmployee(Employee employee)
+        public async Task<Response> SaveEmployee(Employee employee)
         {
             try
             {
@@ -35,9 +35,9 @@ namespace EmployeeBackendAPI.Repository
                 int i = await _context.SaveChangesAsync();
                 if (i > 0)
                 {
-                    response = await saveQualification(employee.employee_Qualification, employee.employee_id);
+                    response = await SaveQualification(employee.employee_Qualification, employee.employee_id);
                     if (!response.resp) { response.resp = false; response.respMsg = "Employee Saved without Qualification details and Contact details."; return response; }
-                    response = await saveContactDetails(employee.employee_Contact_Details, employee.employee_id);
+                    response = await SaveContactDetails(employee.employee_Contact_Details, employee.employee_id);
                     if (response.resp)
                     {
                         response.resp = true;
@@ -69,7 +69,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        private async Task<Response> saveContactDetails(List<EmployeeContactDetail> employee_Contact_Details, string employee_id)
+        private async Task<Response> SaveContactDetails(List<EmployeeContactDetail> employee_Contact_Details, string employee_id)
         {
             try
             {
@@ -114,7 +114,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        private async Task<Response> saveQualification(List<EmployeeQualification> employee_Qualification, string employee_id)
+        private async Task<Response> SaveQualification(List<EmployeeQualification> employee_Qualification, string employee_id)
         {
             try
             {
@@ -213,7 +213,7 @@ namespace EmployeeBackendAPI.Repository
 
 
 
-        public async Task<Response> updateEmployee(Employee employee)
+        public async Task<Response> UpdateEmployee(Employee employee)
         {
             try
             {

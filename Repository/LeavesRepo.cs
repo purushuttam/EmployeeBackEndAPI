@@ -17,7 +17,7 @@ namespace EmployeeBackendAPI.Repository
             _context = context;
         }
 
-        public async Task<Response> addleaves(List<leaves> model)
+        public async Task<Response> Addleaves(List<leaves> model)
         {
             try
             {
@@ -59,7 +59,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<leaves>> getleaves()
+        public async Task<List<leaves>> Getleaves()
         {
             try
             {
@@ -72,7 +72,7 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<leaves> getleavesByEmployee(int lid)
+        public async Task<leaves> GetleavesByEmployee(int lid)
         {
             try
             {
