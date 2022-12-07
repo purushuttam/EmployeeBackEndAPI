@@ -206,9 +206,10 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<EmployeeSearch>> GetAllEmployee()
+        public async Task<List<Employee>> GetAllEmployee()
         {
-            return null;
+            var data = _context.employee.ToList();
+            return data;
         }
 
 

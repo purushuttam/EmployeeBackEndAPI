@@ -40,5 +40,8 @@ namespace EmployeeBackendAPI.Data
         public DbSet<state_master> state_Master { get; set; }
         public DbSet<country_master> country_master { get; set; }
         public DbSet<location> location { get; set; }
+        public DbSet<countries> countries { get; set; }
+        public DbSet<state> state { get; set; }
+        public DbSet<city> city { get; set; }
     }
 }

@@ -8,5 +8,8 @@ namespace EmployeeBackendAPI.Interface
         Task<Response> AddState(state_master state_Master);
         Task<Response> UpdateState(state_master state_Master);
         Task<Response> RemoveState(int stateId);
+        Task<Response> DeleteState(int stateId);
+        Task<Response> SaveState(List<state> state);
+        Task<List<state>> GetAllState(string country_code);
     }
 }

@@ -22,5 +22,13 @@ namespace EmployeeBackendAPI.Controllers
             var res = await _employee.SaveEmployee(employee);
             return Ok(res);
         }
+
+        [HttpGet]
+        [Route("GetAllEmployee")]
+        public async Task<IActionResult> GetAllEmployee()
+        {
+            var res = await _employee.GetAllEmployee();
+            return Ok(res);
+        }
     }
 }

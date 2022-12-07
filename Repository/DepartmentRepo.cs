@@ -53,7 +53,7 @@ namespace EmployeeBackendAPI.Repository
 
         public async Task<List<Department>> GetAllDepartmentAPI()
         {
-            List<Department> EmpVMObjList = new List<Department>();
+            /*List<Department> EmpVMObjList = new List<Department>();
 
             using (NpgsqlConnection con = new NpgsqlConnection(_connectionString))
             {
@@ -71,7 +71,8 @@ namespace EmployeeBackendAPI.Repository
                         }
                     }
                 }
-            }
+            }*/
+            var EmpVMObjList = _context.departments.ToList();
             return EmpVMObjList;
         }
 
@@ -190,7 +191,6 @@ namespace EmployeeBackendAPI.Repository
                 department_id = (string)reader["DeptId"],
                 department_name = reader["DepartmentName"].ToString(),
                 manager_name = reader["ManagerName"].ToString(),
-                location = reader["Location"].ToString()
             };
         }
         private Department MapToValueList(NpgsqlDataReader reader)
@@ -200,7 +200,6 @@ namespace EmployeeBackendAPI.Repository
                 department_id = (string)reader["DeptId"],
                 department_name = reader["DepartmentName"].ToString(),
                 manager_name = reader["ManagerName"].ToString(),
-                location = reader["Location"].ToString()
             };
         }
         //------------- store procedure --------------

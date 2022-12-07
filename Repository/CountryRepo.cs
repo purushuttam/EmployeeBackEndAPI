@@ -3,6 +3,7 @@ using EmployeeBackendAPI.Interface;
 using EmployeeBackendAPI.Model.Area;
 using EmployeeBackendAPI.Model.Comman;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace EmployeeBackendAPI.Repository
 {
@@ -192,6 +193,58 @@ namespace EmployeeBackendAPI.Repository
                 response.respMsg = ex.Message;
                 return response;
             }
+        }
+
+        public async Task<Response> SaveCountries(List<countries> countries)
+        {
+            try
+            {
+                if(countries == null)
+                {
+                    response.resp = false;
+                    response.respMsg = "invalid data";
+                    return response;
+                }
+                foreach(var country in countries)
+                {
+                    country.timezones_json = JsonConvert.SerializeObject(country.timezones);
+                    country.translations_json = JsonConvert.SerializeObject(country.translations);
+                    await _context.countries.AddAsync(country);
+                }
+                int i = await _context.SaveChangesAsync();
+                if(i > 0)
+                {
+                    response.resp = true;
+                    response.respMsg = "countries saved : " + i;
+                    return response;
+                }
+                else
+                {
+                    response.resp = false;
+                    response.respMsg = "error";
+                    return response;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                response.resp = false;
+                response.respMsg = "invalid data";
+                return response;
+            }
+        }
+
+        public async Task<List<countries>> GetAllCountries()
+        {
+            var countries = await _context.countries.ToListAsync();
+            foreach(var country in countries)
+            {
+                country.timezones = JsonConvert.DeserializeObject<List<timezones>>(country.timezones_json);
+                country.translations = JsonConvert.DeserializeObject<translations>(country.translations_json);
+                country.timezones_json = String.Empty;
+                country.translations_json = String.Empty;
+            }
+            return countries;
         }
     }
 }

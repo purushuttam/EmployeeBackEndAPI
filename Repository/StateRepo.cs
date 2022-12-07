@@ -53,6 +53,17 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
+        public Task<Response> DeleteState(int stateId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<state>> GetAllState(string country_code)
+        {
+            var states = _context.state.Where(state => state.country_code.ToLower().Trim() == country_code.ToLower().Trim()).ToList();
+            return states;
+        }
+
         public async Task<Response> RemoveState(int Id)
         {
             try
@@ -79,6 +90,42 @@ namespace EmployeeBackendAPI.Repository
                 {
                     response.resp = false;
                     response.respMsg = "something went wrong";
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                response.resp = false;
+                response.respMsg = ex.Message;
+                return response;
+            }
+        }
+
+        public async Task<Response> SaveState(List<state> states)
+        {
+            try
+            {
+                if(states == null) { response.resp = false; response.respMsg = "invalid data"; return response; }
+
+                foreach (state state in states)
+                {
+                    /*state.type = String.IsNullOrEmpty((string?)state.type) ? String.Empty : state.type;*/
+                    state.state_code = String.IsNullOrEmpty(state.state_code) ? String.Empty : state.state_code;
+                    state.latitude = String.IsNullOrEmpty(state.latitude) ? String.Empty : state.longitude;
+                    state.longitude = String.IsNullOrEmpty(state.longitude) ? String.Empty : state.longitude;
+                    await _context.state.AddAsync(state);
+                }
+                int i = await _context.SaveChangesAsync();
+                if (i > 0)
+                {
+                    response.resp = true;
+                    response.respMsg = "State added successfully. Total " + i + " states.";
+                    return response;
+                }
+                else
+                {
+                    response.resp = false;
+                    response.respMsg = "Something went wrong";
                     return response;
                 }
             }
@@ -117,7 +164,7 @@ namespace EmployeeBackendAPI.Repository
                 else
                 {
                     response.resp = false;
-                    response.respMsg = "Something went wrong";
+                    response.respMsg = "Invalid data";
                     return response;
                 }
             }

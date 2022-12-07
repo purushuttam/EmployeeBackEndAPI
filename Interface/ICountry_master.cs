@@ -9,5 +9,7 @@ namespace EmployeeBackendAPI.Interface
         Task<Response> UpdateCountry(country_master country);
         Task<List<country_master>> GetAllCountry();
         Task<country_master> GetCountry(int id);
+        Task<Response> SaveCountries(List<countries> countries);
+        Task<List<countries>> GetAllCountries();
     }
 }

@@ -167,5 +167,51 @@ namespace EmployeeBackendAPI.Repository
                 return null;
             }
         }
+
+        public async Task<Response> SaveCity(List<city> cities)
+        {
+            try
+            {
+                if (cities != null)
+                {
+                    foreach (var city in cities)
+                    {
+                        city.wikiDataId = String.IsNullOrEmpty(city.wikiDataId) ? string.Empty : city.wikiDataId;
+                        await _context.city.AddAsync(city);
+                    }
+                    int i = await _context.SaveChangesAsync();
+                    if (i > 0)
+                    {
+                        response.resp = true;
+                        response.respMsg = "citi Added successfully. totoal city added : " + i;
+                        return response;
+                    }
+                    else
+                    {
+                        response.resp = false;
+                        response.respMsg = "something went wrong";
+                        return response;
+                    }
+                }
+                else
+                {
+                    response.resp = false;
+                    response.respMsg = "Invalid data";
+                    return response;
+                }
+            }
+            catch(Exception ex)
+            {
+                response.resp = false;
+                response.respMsg = ex.Message;
+                return response;
+            }
+        }
+
+        public async Task<List<city>> GetAllCities(string state_code)
+        {
+            var cities = _context.city.Where(z => z.state_code.ToLower().Trim() == state_code.ToLower().Trim()).ToList();
+            return cities;
+        }
     }
 }
