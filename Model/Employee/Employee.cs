@@ -21,7 +21,7 @@ namespace EmployeeBackendAPI.Model.Employee
         [NotMapped]
         public List<EmployeeQualification> employee_Qualification { get; set; }
         [NotMapped]
-        public List<EmployeeContactDetail> employee_Contact_Details { get; set; }
+        public EmployeeContactDetail employee_Contact_Details { get; set; }
     }
     public class EmployeeQualification
     {
@@ -61,6 +61,7 @@ namespace EmployeeBackendAPI.Model.Employee
         public string? employee_id { get; set; }
         public string first_name { get; set; }
         public string last_name { get; set; }
+        public DateTime jd { get; set; }
         public string department_name { get; set; }
         public bool? is_active { get; set; }
     }

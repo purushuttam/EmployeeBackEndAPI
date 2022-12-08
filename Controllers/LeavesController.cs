@@ -17,7 +17,7 @@ namespace EmployeeBackendAPI.Controllers
         }
         [HttpPost]
         [Route("Addleaves")]
-        public async Task<IActionResult> Addleaves(List<leaves> model)
+        public async Task<IActionResult> Addleaves(leaves model)
         {
             var res = await _leaves.Addleaves(model);
             return Ok(res);

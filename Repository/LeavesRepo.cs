@@ -17,37 +17,35 @@ namespace EmployeeBackendAPI.Repository
             _context = context;
         }
 
-        public async Task<Response> Addleaves(List<leaves> model)
+        public Task<Response> Addleaves(leaves leave)
         {
             try
             {
-                if (model != null)
+                if (leave != null)
                 {
-                    foreach (var leave in model)
-                    {
-                        leave.leaves_id = KeyGen.GetKey();
-                        _context.leaves.Add(leave);
-                    }
 
+                    leave.leaves_id = KeyGen.GetKey();
+                    _context.leaves.Add(leave);
                     int i = _context.SaveChanges();
                     if (i > 0)
                     {
                         response.resp = true;
-                        response.respMsg = "leave applied successfully";
-                        return response;
+                        response.respMsg = "leave applied successfully with leave Id : " + leave.leaves_id;
+                        response.respObj = leave;
+                        return Task.FromResult(response);
                     }
                     else
                     {
                         response.resp = false;
                         response.respMsg = "leave not applied";
-                        return response;
+                        return Task.FromResult(response);
                     }
                 }
                 else
                 {
                     response.resp = false;
                     response.respMsg = "leave not applied";
-                    return response;
+                    return Task.FromResult(response);
                 }
 
             }
@@ -55,16 +53,20 @@ namespace EmployeeBackendAPI.Repository
             {
                 response.resp = false;
                 response.respMsg = ex.Message;
-                return response;
+                return Task.FromResult(response);
             }
         }
 
-        public async Task<List<leaves>> Getleaves()
+        public  Task<List<leaves>> Getleaves()
         {
             try
             {
                 var res = _context.leaves.ToList();
-                return res;
+                foreach (var leave in res)
+                {
+                    leave.employee_id = _context.employee.Find(leave.employee_id).first_name;
+                }
+                return Task.FromResult(res);
             }
             catch
             {
@@ -72,12 +74,12 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<leaves> GetleavesByEmployee(int lid)
+        public Task<leaves> GetleavesByEmployee(int lid)
         {
             try
             {
                 var res = _context.leaves.Find();
-                return res;
+                return Task.FromResult(res);
             }
             catch
             {

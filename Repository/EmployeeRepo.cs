@@ -69,27 +69,24 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        private async Task<Response> SaveContactDetails(List<EmployeeContactDetail> employee_Contact_Details, string employee_id)
+        private async Task<Response> SaveContactDetails(EmployeeContactDetail employee, string employee_id)
         {
             try
             {
-                if (employee_Contact_Details == null)
+                if (employee == null)
                 {
                     response.resp = false;
                     response.respMsg = "Invalid data";
                     return response;
                 }
-                foreach (EmployeeContactDetail employee in employee_Contact_Details)
-                {
-                    employee.employee_contact_details_id = KeyGen.GetKey();
-                    employee.employee_id = employee_id;
-                    employee.is_active = true;
-                    employee.created_by = "Admin";
-                    employee.created_on = DateTime.UtcNow;
-                    employee.updated_by = "admin";
-                    employee.updated_on = DateTime.UtcNow;
-                    await _context.employee_Contact_Details.AddAsync(employee);
-                }
+                employee.employee_contact_details_id = KeyGen.GetKey();
+                employee.employee_id = employee_id;
+                employee.is_active = true;
+                employee.created_by = "Admin";
+                employee.created_on = DateTime.UtcNow;
+                employee.updated_by = "admin";
+                employee.updated_on = DateTime.UtcNow;
+                await _context.employee_Contact_Details.AddAsync(employee);
                 int i = await _context.SaveChangesAsync();
                 if (i > 0)
                 {
@@ -209,7 +206,7 @@ namespace EmployeeBackendAPI.Repository
         public async Task<List<EmployeeSearch>> GetAllEmployee()
         {
             List<Employee> data = _context.employee.ToList();
-            List<EmployeeSearch> search = data.Select(z => new EmployeeSearch() { employee_id = z.employee_id, first_name = z.first_name, last_name = z.last_name, department_name = z.department_id, is_active = z.is_active }).ToList();
+            List<EmployeeSearch> search = data.Select(z => new EmployeeSearch() { employee_id = z.employee_id, first_name = z.first_name, last_name = z.last_name,jd = z.jd, department_name = z.department_id, is_active = z.is_active }).ToList();
             foreach(var item in search)
             {
                 item.department_name = _context.departments.Find(item.department_name).department_name;

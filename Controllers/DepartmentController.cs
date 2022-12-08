@@ -51,5 +51,20 @@ namespace EmployeeBackendAPI.Controllers
             return await _departmnet.DeleteDepartmentAPI(DeptId);
         }
 
+        [HttpPost]
+        [Route("SaveJob")]
+        public async Task<Response> SaveJob(job_master job_Master)
+        {
+            return await _departmnet.SaveJob(job_Master);
+        }
+
+        [HttpGet]
+        [Route("GetAllJob/{department_id}")]
+        public async Task<IActionResult> GetAllJob(string department_id)
+        {
+            var res = _departmnet.GetAllJobs(department_id);
+            return Ok(res);
+        }
+
     }
 }

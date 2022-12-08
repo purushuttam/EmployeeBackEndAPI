@@ -5,7 +5,7 @@ namespace EmployeeBackendAPI.Interface
 {
     public interface ILeaves
     {
-        Task<Response> Addleaves(List<leaves> model);
+        Task<Response> Addleaves(leaves model);
         Task<List<leaves>> Getleaves();
         Task<leaves> GetleavesByEmployee(int empid);
     }
