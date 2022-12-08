@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\purus\\OneDrive\\Desktop\\Purushuttam Inohybrid\\GIT\\Employee API\\github\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj": {}
+    "D:\\Purushuttam web\\Anguler\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\purus\\OneDrive\\Desktop\\Purushuttam Inohybrid\\GIT\\Employee API\\github\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj": {
+    "D:\\Purushuttam web\\Anguler\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\purus\\OneDrive\\Desktop\\Purushuttam Inohybrid\\GIT\\Employee API\\github\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj",
+        "projectUniqueName": "D:\\Purushuttam web\\Anguler\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj",
         "projectName": "EmployeeBackendAPI",
-        "projectPath": "C:\\Users\\purus\\OneDrive\\Desktop\\Purushuttam Inohybrid\\GIT\\Employee API\\github\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj",
-        "packagesPath": "C:\\Users\\purus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\purus\\OneDrive\\Desktop\\Purushuttam Inohybrid\\GIT\\Employee API\\github\\EmployeeBackEndAPI\\obj\\",
+        "projectPath": "D:\\Purushuttam web\\Anguler\\EmployeeBackEndAPI\\EmployeeBackendAPI.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Purushuttam web\\Anguler\\EmployeeBackEndAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\purus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

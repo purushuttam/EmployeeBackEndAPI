@@ -206,10 +206,15 @@ namespace EmployeeBackendAPI.Repository
             }
         }
 
-        public async Task<List<Employee>> GetAllEmployee()
+        public async Task<List<EmployeeSearch>> GetAllEmployee()
         {
-            var data = _context.employee.ToList();
-            return data;
+            List<Employee> data = _context.employee.ToList();
+            List<EmployeeSearch> search = data.Select(z => new EmployeeSearch() { employee_id = z.employee_id, first_name = z.first_name, last_name = z.last_name, department_name = z.department_id, is_active = z.is_active }).ToList();
+            foreach(var item in search)
+            {
+                item.department_name = _context.departments.Find(item.department_name).department_name;
+            }
+            return search;
         }
 
 
