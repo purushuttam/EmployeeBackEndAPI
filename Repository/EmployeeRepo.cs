@@ -26,6 +26,8 @@ namespace EmployeeBackendAPI.Repository
                     return response;
                 }
                 employee.employee_id = KeyGen.GetKey();
+                employee.first_name = employee.first_name.ToUpper();
+                employee.last_name = employee.last_name.ToUpper();
                 employee.is_active = true;
                 employee.created_by = "Admin";
                 employee.created_on = DateTime.UtcNow;

@@ -202,54 +202,7 @@ namespace EmployeeBackendAPI.Repository
             };
         }
 
-        public async Task<Response> SaveJob(job_master job_Master)
-        {
-            try
-            {
-                if(job_Master != null)
-                {
-                    job_Master.job_master_id = KeyGen.GetKey();
-                    job_Master.is_active = true;
-                    job_Master.created_by = "admin";
-                    job_Master.created_on = DateTime.UtcNow;
-                    job_Master.updated_by = "admin";
-                    job_Master.updated_on = DateTime.UtcNow;
-                    await _context.job_master.AddAsync(job_Master);
-                    int i = await _context.SaveChangesAsync();
-                    if(i > 0)
-                    {
-                        response.resp = true;
-                        response.respMsg = "job saved successfully with job id : " + job_Master.job_master_id;
-                        response.respObj = job_Master;
-                        return response;
-                    }
-                    else
-                    {
-                        response.resp = false;
-                        response.respMsg = "job not saved ";
-                        return response;
-                    }
-                }
-                else
-                {
-                    response.resp = false;
-                    response.respMsg = "job not saved ";
-                    return response;
-                }
-            }
-            catch(Exception ex)
-            {
-                response.resp = false;
-                response.respMsg = ex.Message;
-                return response;
-            }
-        }
-
-        public async Task<List<job_master>> GetAllJobs(string department_id)
-        {
-            var data = _context.job_master.Where(z => z.department_id.Equals(department_id)).ToList();
-            return data;
-        }
+        
         //------------- store procedure --------------
         /* private Department MapToValue(NpgsqlDataReader reader)
          {

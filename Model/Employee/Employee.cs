@@ -13,6 +13,7 @@ namespace EmployeeBackendAPI.Model.Employee
         public DateTime dob { get; set; }
         public DateTime jd { get; set; }
         public string department_id { get; set; }
+        public string job_master_id { get; set; }
         public bool? is_active { get; set; }
         public DateTime? created_on { get; set; }
         public string? created_by { get; set; }
