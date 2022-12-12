@@ -19,6 +19,7 @@ builder.Services.AddScoped<IState_master, StateRepo>();
 builder.Services.AddScoped<ICountry_master, CountryRepo>();
 builder.Services.AddScoped<IEmployee, EmployeeRepo>();
 builder.Services.AddScoped<ILeaves, LeavesRepo>();
+builder.Services.AddScoped<IJobs,JobsRepo>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

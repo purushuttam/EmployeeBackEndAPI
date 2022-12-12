@@ -10,7 +10,5 @@ namespace EmployeeBackendAPI.Interface
         Task<Response> AddDepartmentAPI(Department department);
         Task<Response> UpdateDepartmentAPI(Department department);
         Task<Response> DeleteDepartmentAPI(int DeptId);
-        Task<Response> SaveJob(job_master job_Master);
-        Task<List<job_master>> GetAllJobs(string department_id);
     }
 }
