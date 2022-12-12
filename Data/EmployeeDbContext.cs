@@ -28,6 +28,22 @@ namespace EmployeeBackendAPI.Data
                 entity.Property(p => p.Id).HasColumnName("UserId");
             });
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+                var connectionString = configuration.GetConnectionString("EmployeeDbConnnection");
+                optionsBuilder.UseNpgsql(connectionString);
+            }
+
+            optionsBuilder
+                .UseNpgsql(@"Server=localhost;Database=EmployeeAPI;User Id=postgres;Password=Raja@1234;")
+                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+        }
         /*public DbSet<translate_api> translate_api { get; set; }
         public DbSet<hotel_master_new> hotel_master_new { get; set; }*/
         public DbSet<Employee> employee { get; set; }

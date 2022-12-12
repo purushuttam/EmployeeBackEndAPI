@@ -121,6 +121,7 @@ namespace EmployeeBackendAPI.Repository
                     response.respMsg = "Invalid data";
                     return response;
                 }
+                var data = _context.employee_Qualification.Where(z => z.employee_id.)
                 foreach (EmployeeQualification employee in employee_Qualification)
                 {
                     employee.employee_qualification_id = KeyGen.GetKey();
@@ -220,7 +221,44 @@ namespace EmployeeBackendAPI.Repository
         {
             try
             {
-                return null;
+                if(employee != null)
+                {
+                    var data = await _context.employee.FindAsync(employee.employee_id);
+                    if(data != null)
+                    {
+                        employee.is_active = true;
+                        employee.created_by = data.created_by;
+                        employee.created_on = DateTime.UtcNow;
+                        employee.updated_by = data.updated_by;
+                        employee.updated_on = DateTime.UtcNow;
+                        _context.employee.Update(employee);
+                    }
+                    int i = await _context.SaveChangesAsync();
+                    if(i > 0)
+                    {
+                        var objquali = await SaveQualification(employee.employee_Qualification, employee.employee_id);
+                        if (objquali.resp) return new Response { resp = false, respMsg = "failed to save" };
+                        var objcont = await SaveContactDetails(employee.employee_Contact_Details, employee.employee_id);
+                        if (objcont.resp) return new Response { resp = false, respMsg = "failed to save" };
+
+                        response.resp = true;
+                        response.respMsg = "employee updated successfully";
+                        response.respObj = employee;
+                        return response;
+                    }
+                    else
+                    {
+                        response.resp = false;
+                        response.respMsg = "employee not updated";
+                        return response;
+                    }
+                }
+                else
+                {
+                    response.resp = false;
+                    response.respMsg = "employee not updated";
+                    return response;
+                }
             }
             catch (Exception ex)
             {
